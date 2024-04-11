@@ -5,7 +5,7 @@
   &__burger {
     @include clear-button;
 
-    margin-left: auto;
+      margin-left: auto;
 
     @media (min-width: 768px) {
       display: none;
@@ -22,11 +22,9 @@
   &__container {
     display: flex;
     align-items: center;
-
   }
 
   &__item {
-
     font-weight: 400;
     font-size: 16px;
     line-height: 34px;
@@ -41,7 +39,6 @@
     margin-right:110px
   }
 
-
   &__list {
     @include clear-list;
     display: none;
@@ -50,22 +47,20 @@
       display: block;
     }
 
-
     @media (min-width: 768px) {
       display: flex;
     }
-
   }
 
   &__group {
-  margin-left: auto;
-  img {
-    width:19px;
-    height: 16px;
-    color: #000000;
-    margin-right: 14px;
-    margin-left: 14px;
+    margin-left: auto;
 
-  }
+    img {
+      width:19px;
+      height: 16px;
+      color: #000000;
+      margin-right: 14px;
+      margin-left: 14px;
+    }
   }
 }
