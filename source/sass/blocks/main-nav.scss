@@ -5,6 +5,8 @@
   &__burger {
     @include clear-button;
 
+    margin-left: auto;
+
     @media (min-width: 768px) {
       display: none;
     }
@@ -36,15 +38,23 @@
   }
 
   &__logo {
-    margin-right:140px
+    margin-right:110px
   }
 
 
   &__list {
     @include clear-list;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: none;
+
+    &--showed {
+      display: block;
+    }
+
+
+    @media (min-width: 768px) {
+      display: flex;
+    }
+
   }
 
   &__group {
