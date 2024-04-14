@@ -3,6 +3,8 @@
 
   &__contacts {
     display: none;
+    margin-top: auto;
+    padding-bottom: 10px;
 
     .social {
       @include clear-list;
@@ -83,6 +85,7 @@
       right: 0;
       width: 50%;
       height: 100vh;
+      z-index: 100;
     }
 
     @media (min-width: 768px) {
@@ -91,11 +94,12 @@
 
 
     &--showed {
-      display: block;
+      display: flex;
+      flex-direction: column;
 
       .main-nav__contacts {
         display: block;
-        margin-top: 200px;
+
         font-weight: 400;
         font-size: 12px;
         line-height: 18px;
@@ -103,7 +107,7 @@
         color: #000 75%;
 
         p {
-          margin-bottom: 0;
+          margin-bottom: 15px;
           margin-right: 10px;
         }
       }
