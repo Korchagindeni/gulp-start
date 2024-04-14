@@ -19,6 +19,7 @@
       @include clear-button;
 
       margin-left: auto;
+      z-index: 1;
 
       @media (max-width: 321px) {
         display: none;
@@ -36,17 +37,33 @@
     }
   }
 
+  &__group {
+    margin-left: auto;
+    padding-top: 10px;
+    padding-right: 50px;
+
+    img {
+      width:19px;
+      height: 16px;
+      color: #000000;
+    }
+  }
+
   &__close {
       @include clear-button;
       display: none;
       position: absolute;
+      margin-left: 20px;
       top: 24px;
       right: 11px;
+      z-index: 2;
   }
 
   &__container {
     display: flex;
     align-items: center;
+    margin-top: 15px;
+    margin-left: 12px;
   }
 
   &__logo {
@@ -71,6 +88,7 @@
     @media (min-width: 768px) {
       display: block;
     }
+
 
     &--showed {
       display: block;
@@ -102,7 +120,7 @@
     @media (min-width: 768px) {
       display: flex;
     }
-    padding-top: 76px;
+    margin-top: 76px;
   }
 
 
@@ -142,16 +160,5 @@
       }
     }
   }
-  &__group {
-    margin-left: auto;
-    padding-top: 10px;
 
-    img {
-      width:19px;
-      height: 16px;
-      color: #000000;
-      margin-right: 14px;
-      margin-left: 14px;
-    }
-  }
 }
