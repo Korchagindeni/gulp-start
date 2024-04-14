@@ -8,23 +8,43 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
     <body>
-      <nav class="main-nav">
+      <header class="main-nav">
         <div class="container main-nav__container">
           <a class="main-nav__logo">
-            <img src="img/logo.jpg" alt="Логотип"/>
+            <img src="img/logo.jpg" alt="Логотип">
           </a>
+          <nav class="main-nav__menu main-nav__menu--showed">
 
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="#">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">Магазин</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
+            <button class="main-nav__close">
+              <img src="img/closed.png" alt="">
+            </button>
+
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a>Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">Магазин</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+            <div class="main-nav__contacts">
+              <p>Следи за нами в социальных сетях:</p>
+
+              <ul class="main-nav__social social">
+                <li class="social__item">
+                  <a href="#">
+                    <img src="img/telegram.png" alt="телеграм">
+                  </a>
+                  <a href="#">
+                    <img src="img/Vkontakte.png" alt="вконтакте">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
 
           <div class="main-nav__group">
             <a> <img src="img/find.jpg" alt="поиск"></a>
@@ -36,6 +56,6 @@
           </button>
 
         </div>
-      </nav>
+      </header>
     </body>
 </html>
