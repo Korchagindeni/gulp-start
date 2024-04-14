@@ -8,23 +8,20 @@
       @include clear-list;
 
       margin: 22px 10px;
-
-      }
-
-      &__item {
-        margin-right:10px ;
-      }
     }
   }
 
+  &__item {
+        margin-right:10px ;
+      }
 
   &__burger {
-    @include clear-button;
+      @include clear-button;
 
-    margin-left: auto;
+      margin-left: auto;
 
-    @media (max-width: 321px) {
-      display: none;
+      @media (max-width: 321px) {
+        display: none;
     }
 
     @media (min-width: 320px) {
@@ -38,6 +35,7 @@
       margin-left: 19px;
     }
   }
+
   &__close {
       @include clear-button;
       display: none;
@@ -142,8 +140,8 @@
           transform: scale(1.2) translateY(5px) translateX(5px)
         }
       }
+    }
   }
-
   &__group {
     margin-left: auto;
     padding-top: 10px;
