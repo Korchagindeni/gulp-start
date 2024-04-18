@@ -9,51 +9,42 @@
   </head>
     <body>
       <header class="main-nav">
-        <div class="container main-nav__container">
+        <div class="main-nav__container container">
+
           <a class="main-nav__logo">
-            <img src="img/logo.jpg" alt="Логотип">
+            <img src="img/logo.svg" alt="Логотип">
           </a>
+
           <nav class="main-nav__menu main-nav__menu--showed">
-
-            <button class="main-nav__close">
-              <img src="img/closed.png" alt="">
-            </button>
-
             <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a>Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#">Магазин</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#">Контакты</a>
-              </li>
+              <li class="main-nav__list-item"><a>Главная</a></li>
+              <li class="main-nav__list-item"><a href="#">Магазин</a></li>
+              <li class="main-nav__list-item"><a href="#">Контакты</a></li>
             </ul>
-            <div class="main-nav__contacts">
-              <p>Следи За Нами <br> В Социальных Сетях:</p>
 
-              <ul class="main-nav__social social">
-                <li class="social__item">
-                  <a href="#">
-                    <img src="img/telegram.png" alt="телеграм">
-                  </a>
-                  <a href="#">
-                    <img src="img/Vkontakte.png" alt="вконтакте">
-                  </a>
-                </li>
-              </ul>
+            <div class="main-nav__contacts">
+              <p>Следи За Нами
+              <br> В Социальных Сетях:</p>
+              <a href="#"><img src="img/telegram.png" alt="телеграм"></a>
+              <a href="#"><img src="img/Vkontakte.png" alt="вконтакте"></a>
             </div>
           </nav>
 
-          <div class="main-nav__group">
-            <a> <img src="img/find.jpg" alt="поиск"></a>
-            <a> <img src="img/shop.jpg" alt="корзина"></a>
+          <div class="main-nav__user-action">
+            <button class="main-nav__button">
+              <img src="img/find.svg" alt="search icon">
+            </button>
+            <button class="main-nav__button">
+              <span class="main-nav__shop-counter">100</span>
+              <img src="img/shop.svg" alt="shop icon">
+            </button>
+            <button class="main-nav__button main-nav__button--hidden">
+              <img src="img/burger.svg" alt="menu open icon">
+            </button>
+            <button class="main-nav__button main-nav__button--closed">
+              <img src="img/closed.svg" alt="">
+            </button>
           </div>
-
-          <button class="main-nav__burger">
-            <img src="img/Union.jpg" alt="">
-          </button>
 
         </div>
       </header>
