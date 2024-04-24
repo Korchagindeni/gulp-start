@@ -48,7 +48,7 @@
       @media (max-width: 767px) {
         display: flex;
         flex-direction: column;
-        padding: 15px 10px 20px 20px;
+        padding: 15px 0 20px 0;
         position: absolute;
         z-index: 100;
         top: 0;
@@ -57,6 +57,15 @@
         height: 100vh;
         background-color: #ebebeb;
         box-shadow: -6px 0 19px 4px rgba(0,0,0,.09);
+
+
+        .main-nav__button--closed {
+          display: block;
+        }
+
+        .main-nav__button--burger {
+          display: none;
+        }
       }
     }
   }
@@ -66,53 +75,49 @@
     @include clear-list;
 
     @media (max-width: 767px) {
-      position: absolute;
-      right: 0;
-      top: 75px;
       text-align: end;
       width: 100%;
+      margin-top: 75px;
     }
 
     @media (min-width: 768px) {
       display:flex;
       padding-top: 10px;
     }
-  }
+      &-item {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 400;
 
-  &__list-item {
-    @media (max-width: 767px) {
-      font-size: 20px;
-      line-height: 24px;
-      font-weight: 400px;
-    }
-    @media (min-width: 768px) {
-      font-size: 16px;
-      font-weight: 400px;
-      line-height: 24px;
-    }
-    @media (min-width: 1728px) {
-      font-size: 24px;
-      line-height: 37px;
-    }
+        @media (min-width: 768px) {
+        font-size: 16px;
+        }
+        @media (min-width: 1728px) {
+        font-size: 24px;
+        line-height: 37px;
+        }
 
-    a {
-      display: block;
-      @media (max-width: 767px) {
-        background-color: #f6f6f6;
-        padding: 10px 10px 10px 77px;
-        border-top: 1px solid #d9d9d9ce;
-        border-bottom: 1px solid #d9d9d9ce;
+
+        a {
+          display: block;
+
+          @media (max-width: 767px) {
+          background-color: #f6f6f6;
+          padding: 10px 10px 10px 77px;
+          border-top: 1px solid #d9d9d9ce;
+          border-bottom: 1px solid #d9d9d9ce;
+          }
+
+          @media (min-width: 768px) {
+            padding: 15px 12px;
+          }
+
+          @media (min-width: 1728px) {
+            padding: 18px 18px;
+          }
+        }
       }
-
-      @media (min-width: 768px) {
-        padding: 15px 12px;
-      }
-
-      @media (min-width: 1728px) {
-        padding: 18px 18px;
-      }
     }
-  }
 
   &__contacts {
     display: none;
@@ -129,6 +134,7 @@
     p {
       margin-bottom: 15px;
       color: #000000c9;
+      margin-right: 10px;
     }
 
     a {
@@ -170,14 +176,14 @@
       }
     }
 
-   &--hidden {
+    &--burger .main-nav__menu--showed {
       @media (min-width: 768px) {
-      display: none;
+        display: none;
       }
     }
 
     &--closed {
-      display: none;
+      display: block;
     }
   }
   &__shop-counter {
