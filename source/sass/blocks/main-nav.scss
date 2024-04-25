@@ -7,6 +7,32 @@
     align-items: center;
     padding-top: 15px;
 
+    &--showed {
+      @media (max-width: 767px) {
+        .main-nav__menu {
+          display: flex;
+          flex-direction: column;
+          padding: 15px 0 20px 0;
+          position: absolute;
+          z-index: 100;
+          top: 0;
+          right: 0;
+          width: 50%;
+          height: 100vh;
+          background-color: #ebebeb;
+          box-shadow: -6px 0 19px 4px rgba(0,0,0,.09);
+        }
+
+        .main-nav__button--closed {
+          display: block;
+        }
+
+        .main-nav__button--burger {
+          display: none;
+        }
+      }
+    }
+
     @media (min-width: 768px) {
       padding-top: 77px;
     }
@@ -42,22 +68,6 @@
 
     @media (min-width: 768px) {
       display: block;
-    }
-
-    &--showed {
-      @media (max-width: 767px) {
-        display: flex;
-        flex-direction: column;
-        padding: 15px 0 20px 0;
-        position: absolute;
-        z-index: 100;
-        top: 0;
-        right: 0;
-        width: 50%;
-        height: 100vh;
-        background-color: #ebebeb;
-        box-shadow: -6px 0 19px 4px rgba(0,0,0,.09);
-      }
     }
   }
 
@@ -169,18 +179,12 @@
 
     &--burger {
       @media (min-width: 768px) {
-        display: block;
-      }
-
-      @media (max-width: 767px) {
         display: none;
       }
     }
 
     &--closed {
-      @media (min-width: 767px) {
-        display: none;
-      }
+     display: none;
     }
   }
   &__shop-counter {
