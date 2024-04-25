@@ -7,7 +7,46 @@
     <title>Ваш проект</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
-  <body>
-    Привет мир!
-  </body>
+    <body>
+      <header class="main-nav">
+        <div class="main-nav__container main-nav__container--showed container">
+
+          <a class="main-nav__logo">
+            <img src="img/logo.svg" alt="Логотип">
+          </a>
+
+          <nav class="main-nav__menu">
+            <ul class="main-nav__list">
+              <li class="main-nav__list-item"><a>Главная</a></li>
+              <li class="main-nav__list-item"><a href="#">Магазин</a></li>
+              <li class="main-nav__list-item"><a href="#">Контакты</a></li>
+            </ul>
+
+            <div class="main-nav__contacts">
+              <p>Следи За Нами
+              <br> В Социальных Сетях:</p>
+              <a href="#"><img src="img/tg.svg" alt="телеграм"></a>
+              <a href="#"><img src="img/vk.svg" alt="вконтакте"></a>
+            </div>
+          </nav>
+
+          <div class="main-nav__user-action">
+            <button class="main-nav__button">
+              <img src="img/find.svg" alt="search icon">
+            </button>
+            <button class="main-nav__button">
+              <span class="main-nav__shop-counter">100</span>
+              <img src="img/shop.svg" alt="shop icon">
+            </button>
+            <button class="main-nav__button main-nav__button--burger">
+              <img src="img/burger.svg" alt="menu open icon">
+            </button>
+            <button class="main-nav__button main-nav__button--closed">
+              <img src="img/closed.svg" alt="">
+            </button>
+          </div>
+
+        </div>
+      </header>
+    </body>
 </html>
