@@ -85,17 +85,18 @@
       display:flex;
       padding-top: 10px;
     }
+
     &-item {
       font-size: 20px;
       line-height: 24px;
       font-weight: 400;
 
       @media (min-width: 768px) {
-       font-size: 16px;
+        font-size: 16px;
       }
       @media (min-width: 1728px) {
-       font-size: 24px;
-      line-height: 37px;
+        font-size: 24px;
+        line-height: 37px;
       }
 
 
@@ -158,7 +159,7 @@
     z-index: 1000;
 
     @media (min-width: 768px) {
-        gap: 44px;
+      gap: 44px;
     }
   }
 
@@ -184,7 +185,7 @@
     }
 
     &--closed {
-     display: none;
+      display: none;
     }
   }
   &__shop-counter {
